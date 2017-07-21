@@ -32,7 +32,7 @@ namespace ClarifaiSDK
     partial class ClarifaiConcept
     {
         [Export ("initWithConceptId:")]
-        protected ClarifaiConcept (string conceptId, object fakeParameter)
+        public ClarifaiConcept (NSString conceptId)
             : base (NSObjectFlag.Empty)
         {
             if (conceptId == null)
@@ -46,10 +46,6 @@ namespace ClarifaiSDK
                 InitializeHandle (global::ApiDefinition.Messaging.IntPtr_objc_msgSendSuper_IntPtr (this.SuperHandle, Selector.GetHandle ("initWithConceptId:"), nsconceptId), "initWithConceptId:");
             }
             NSString.ReleaseNative (nsconceptId);
-        }
-
-        public static ClarifaiConcept CreateClarifaiConceptFromId(string id) {
-            return new ClarifaiConcept(id, new {});
         }
     }
 }
