@@ -5,7 +5,7 @@
         <id>Naxam.Clarifai.iOS</id>
         <version>2.3.2</version>
         <description>Xamarin Binding Library - Clarifai for iOS</description>
-        <authors>Vu Duc Tuyen</authors>
+        <authors>NAXAM</authors>
         <owners>NAXAM CO.,LTD</owners>
         <requireLicenseAcceptance>false</requireLicenseAcceptance>
         <title>Naxam - Clarifai for iOS</title>
